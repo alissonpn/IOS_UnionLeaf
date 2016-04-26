@@ -1,4 +1,59 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="Test1.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10171" systemVersion="15E65" minimumToolsVersion="Automatic">
+    <entity name="Local" representedClassName=".Local" syncable="YES">
+        <attribute name="latitude" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="produtoLojaUsuarioR" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ProdutoLojaUsuario" inverseName="localR" inverseEntity="ProdutoLojaUsuario" syncable="YES"/>
+    </entity>
+    <entity name="Loja" representedClassName=".Loja" syncable="YES">
+        <attribute name="endereco" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imagemUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="telefone" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="produtoLojaUsuarioR" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ProdutoLojaUsuario" inverseName="lojaR" inverseEntity="ProdutoLojaUsuario" syncable="YES"/>
+    </entity>
+    <entity name="Marca" representedClassName=".Marca" syncable="YES">
+        <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="produtoR" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Produto" inverseName="marcaR" inverseEntity="Produto" syncable="YES"/>
+    </entity>
+    <entity name="Produto" representedClassName=".Produto" syncable="YES">
+        <attribute name="descricao" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imagemUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="marcaR" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Marca" inverseName="produtoR" inverseEntity="Marca" syncable="YES"/>
+        <relationship name="produtoLojaUsuarioR" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ProdutoLojaUsuario" inverseName="produtoR" inverseEntity="ProdutoLojaUsuario" syncable="YES"/>
+    </entity>
+    <entity name="ProdutoLojaUsuario" representedClassName=".ProdutoLojaUsuario" syncable="YES">
+        <attribute name="observacao" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pontuacao" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="valor" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="localR" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Local" inverseName="produtoLojaUsuarioR" inverseEntity="Local" syncable="YES"/>
+        <relationship name="lojaR" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Loja" inverseName="produtoLojaUsuarioR" inverseEntity="Loja" syncable="YES"/>
+        <relationship name="produtoR" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Produto" inverseName="produtoLojaUsuarioR" inverseEntity="Produto" syncable="YES"/>
+        <relationship name="usuarioR" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Usuario" inverseName="produtoLojaUsuarioR" inverseEntity="Usuario" syncable="YES"/>
+    </entity>
+    <entity name="Usuario" representedClassName=".Usuario" syncable="YES">
+        <attribute name="loginFacebook" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="loginUL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pontuacao" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="senhaUL" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="produtoLojaUsuarioR" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ProdutoLojaUsuario" inverseName="usuarioR" inverseEntity="ProdutoLojaUsuario" syncable="YES"/>
+        <relationship name="usuarioTipoR" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="UsuarioTipo" inverseName="usuarioR" inverseEntity="UsuarioTipo" syncable="YES"/>
+    </entity>
+    <entity name="UsuarioTipo" representedClassName=".UsuarioTipo" syncable="YES">
+        <attribute name="tipo" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="usuarioR" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Usuario" inverseName="usuarioTipoR" inverseEntity="Usuario" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Produto" positionX="-81" positionY="-54" width="128" height="118"/>
+        <element name="Marca" positionX="-171" positionY="99" width="128" height="73"/>
+        <element name="Usuario" positionX="-74" positionY="198" width="128" height="148"/>
+        <element name="Local" positionX="151" positionY="-144" width="128" height="88"/>
+        <element name="Loja" positionX="277" positionY="72" width="128" height="148"/>
+        <element name="UsuarioTipo" positionX="151" positionY="258" width="128" height="73"/>
+        <element name="ProdutoLojaUsuario" positionX="108" positionY="27" width="128" height="148"/>
+    </elements>
 </model>
