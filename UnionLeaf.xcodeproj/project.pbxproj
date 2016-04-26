@@ -56,15 +56,39 @@
 		3F67A8831CCFE8F1002863E6 /* UnionLeaf */ = {
 			isa = PBXGroup;
 			children = (
+				3F86473A1CCFF40800352F36 /* Model */,
+				3F8647391CCFF40200352F36 /* Controller */,
+				3F8647381CCFF3FB00352F36 /* View */,
 				3F67A8841CCFE8F1002863E6 /* AppDelegate.swift */,
-				3F67A8861CCFE8F1002863E6 /* ViewController.swift */,
-				3F67A8881CCFE8F1002863E6 /* Main.storyboard */,
 				3F67A88E1CCFE8F1002863E6 /* Assets.xcassets */,
-				3F67A8901CCFE8F1002863E6 /* LaunchScreen.storyboard */,
 				3F67A8931CCFE8F1002863E6 /* Info.plist */,
-				3F67A88B1CCFE8F1002863E6 /* UnionLeaf.xcdatamodeld */,
 			);
 			path = UnionLeaf;
+			sourceTree = "<group>";
+		};
+		3F8647381CCFF3FB00352F36 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3F67A8901CCFE8F1002863E6 /* LaunchScreen.storyboard */,
+				3F67A8881CCFE8F1002863E6 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		3F8647391CCFF40200352F36 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3F67A8861CCFE8F1002863E6 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		3F86473A1CCFF40800352F36 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3F67A88B1CCFE8F1002863E6 /* UnionLeaf.xcdatamodeld */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,6 +314,7 @@
 				3F67A8981CCFE8F1002863E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
