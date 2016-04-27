@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10171" systemVersion="15E65" minimumToolsVersion="Automatic">
+    <entity name="Favoritos" representedClassName=".Favoritos" syncable="YES">
+        <attribute name="descricao" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="produtoLojaUsuarioR" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ProdutoLojaUsuario" inverseName="favoritosR" inverseEntity="ProdutoLojaUsuario" syncable="YES"/>
+        <relationship name="usuarioR" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Usuario" inverseName="favoritosR" inverseEntity="Usuario" syncable="YES"/>
+    </entity>
     <entity name="Local" representedClassName=".Local" syncable="YES">
         <attribute name="latitude" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="longitude" optional="YES" attributeType="String" syncable="YES"/>
@@ -29,6 +34,7 @@
         <attribute name="observacao" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="pontuacao" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="valor" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="favoritosR" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Favoritos" inverseName="produtoLojaUsuarioR" inverseEntity="Favoritos" syncable="YES"/>
         <relationship name="localR" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Local" inverseName="produtoLojaUsuarioR" inverseEntity="Local" syncable="YES"/>
         <relationship name="lojaR" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Loja" inverseName="produtoLojaUsuarioR" inverseEntity="Loja" syncable="YES"/>
         <relationship name="produtoR" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Produto" inverseName="produtoLojaUsuarioR" inverseEntity="Produto" syncable="YES"/>
@@ -40,6 +46,7 @@
         <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="pontuacao" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="senhaUL" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="favoritosR" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Favoritos" inverseName="usuarioR" inverseEntity="Favoritos" syncable="YES"/>
         <relationship name="produtoLojaUsuarioR" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ProdutoLojaUsuario" inverseName="usuarioR" inverseEntity="ProdutoLojaUsuario" syncable="YES"/>
         <relationship name="usuarioTipoR" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="UsuarioTipo" inverseName="usuarioR" inverseEntity="UsuarioTipo" syncable="YES"/>
     </entity>
@@ -48,12 +55,13 @@
         <relationship name="usuarioR" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Usuario" inverseName="usuarioTipoR" inverseEntity="Usuario" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Produto" positionX="-81" positionY="-54" width="128" height="118"/>
-        <element name="Marca" positionX="-171" positionY="99" width="128" height="73"/>
-        <element name="Usuario" positionX="-74" positionY="198" width="128" height="148"/>
         <element name="Local" positionX="151" positionY="-144" width="128" height="88"/>
         <element name="Loja" positionX="277" positionY="72" width="128" height="148"/>
+        <element name="Marca" positionX="-171" positionY="99" width="128" height="73"/>
+        <element name="Produto" positionX="-81" positionY="-54" width="128" height="118"/>
+        <element name="ProdutoLojaUsuario" positionX="108" positionY="27" width="128" height="163"/>
+        <element name="Usuario" positionX="-74" positionY="198" width="128" height="163"/>
         <element name="UsuarioTipo" positionX="151" positionY="258" width="128" height="73"/>
-        <element name="ProdutoLojaUsuario" positionX="108" positionY="27" width="128" height="148"/>
+        <element name="Favoritos" positionX="-90" positionY="-135" width="128" height="88"/>
     </elements>
 </model>

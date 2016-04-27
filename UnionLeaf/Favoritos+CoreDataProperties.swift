@@ -1,5 +1,5 @@
 //
-//  ProdutoLojaUsuario+CoreDataProperties.swift
+//  Favoritos+CoreDataProperties.swift
 //  UnionLeaf
 //
 //  Created by Student on 4/27/16.
@@ -12,15 +12,10 @@
 import Foundation
 import CoreData
 
-extension ProdutoLojaUsuario {
+extension Favoritos {
 
-    @NSManaged var observacao: String?
-    @NSManaged var pontuacao: String?
-    @NSManaged var valor: NSNumber?
-    @NSManaged var localR: Local?
-    @NSManaged var lojaR: Loja?
-    @NSManaged var produtoR: Produto?
+    @NSManaged var descricao: String?
     @NSManaged var usuarioR: Usuario?
-    @NSManaged var favoritosR: Favoritos?
+    @NSManaged var produtoLojaUsuarioR: ProdutoLojaUsuario?
 
 }
