@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        print("teste 12345")
+        print("teste 123456")
         //var produto = Produto()
         //var marca = produto.marcaR! as Marca
         
