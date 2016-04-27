@@ -14,6 +14,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         print("teste 12345")
+        //var produto = Produto()
+        //var marca = produto.marcaR! as Marca
+        
+        //0testep.produtoLojaUsuarioR
+        //ProdutoDAO.DaoFactory.
     }
 
     override func didReceiveMemoryWarning() {

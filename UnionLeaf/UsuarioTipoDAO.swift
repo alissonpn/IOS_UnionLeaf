@@ -9,10 +9,10 @@
 import UIKit
 import CoreData
 
-class UsuarioDAO:DAO {
-    private static var usuarioDao = UsuarioDAO()
-    static var DaoFactory:UsuarioDAO{
-        return usuarioDao
+class UsuarioTipoDAO:DAO {
+    private static var usuarioTipoDao = UsuarioTipoDAO()
+    static var DaoFactory:UsuarioTipoDAO{
+        return usuarioTipoDao
     }
     func alterar(){
         do{
@@ -23,8 +23,8 @@ class UsuarioDAO:DAO {
             print(error)
         }
     }
-    func inserir(newusuario:Usuario){
-        context.insertObject(newusuario)
+    func inserir(newusuarioTipo:UsuarioTipo){
+        context.insertObject(newusuarioTipo)
         do{
             try context.save()
             print("inserido")
@@ -33,8 +33,8 @@ class UsuarioDAO:DAO {
             print(error)
         }
     }
-    func remover(newusuario:Usuario){
-        context.deleteObject(newusuario)
+    func remover(newusuarioTipo:UsuarioTipo){
+        context.deleteObject(newusuarioTipo)
         do{
             try context.save()
             print("Removido")
@@ -43,20 +43,20 @@ class UsuarioDAO:DAO {
             print(error)
         }
     }
-    func buscar()->[Usuario]{
-        var usuario: [Usuario] = [Usuario]()
-        let request: NSFetchRequest = NSFetchRequest(entityName: "usuario")
-        request.sortDescriptors = [NSSortDescriptor(key: "nome", ascending: true)]
+    func buscar()->[UsuarioTipo]{
+        var usuarioTipo: [UsuarioTipo] = [UsuarioTipo]()
+        let request: NSFetchRequest = NSFetchRequest(entityName: "usuarioTipo")
+        request.sortDescriptors = [NSSortDescriptor(key: "tipo", ascending: true)]
         
         do {
-            usuario = try context.executeFetchRequest(request) as! [Usuario]
-            print("usuario qtd: ", usuario.count)
+            usuarioTipo = try context.executeFetchRequest(request) as! [UsuarioTipo]
+            print("usuarioTipo qtd: ", usuarioTipo.count)
             
         } catch let erro as NSError {
             print(erro)
         }
         
-        return usuario
+        return usuarioTipo
         
     }
 }

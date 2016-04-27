@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F17A6F31CD13600006293B9 /* ProdutoLojaUsuarioDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F17A6F21CD13600006293B9 /* ProdutoLojaUsuarioDAO.swift */; };
+		3F17A6F51CD13623006293B9 /* UsuarioTipoDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F17A6F41CD13623006293B9 /* UsuarioTipoDAO.swift */; };
 		3F67A8851CCFE8F1002863E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F67A8841CCFE8F1002863E6 /* AppDelegate.swift */; };
 		3F67A8871CCFE8F1002863E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F67A8861CCFE8F1002863E6 /* ViewController.swift */; };
 		3F67A88A1CCFE8F1002863E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F67A8881CCFE8F1002863E6 /* Main.storyboard */; };
@@ -36,6 +38,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F17A6F21CD13600006293B9 /* ProdutoLojaUsuarioDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProdutoLojaUsuarioDAO.swift; sourceTree = "<group>"; };
+		3F17A6F41CD13623006293B9 /* UsuarioTipoDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsuarioTipoDAO.swift; sourceTree = "<group>"; };
 		3F67A8811CCFE8F1002863E6 /* UnionLeaf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnionLeaf.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F67A8841CCFE8F1002863E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F67A8861CCFE8F1002863E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -145,6 +149,8 @@
 				3FAC58681CD00D99005EC856 /* MarcaDAO.swift */,
 				3FAC586A1CD00DB7005EC856 /* ProdutoDAO.swift */,
 				3FAC586C1CD00DE2005EC856 /* LojaDAO.swift */,
+				3F17A6F41CD13623006293B9 /* UsuarioTipoDAO.swift */,
+				3F17A6F21CD13600006293B9 /* ProdutoLojaUsuarioDAO.swift */,
 				3FAC586E1CD00DFB005EC856 /* UsuarioDAO.swift */,
 				3FAC58701CD00E3B005EC856 /* LocalDAO.swift */,
 			);
@@ -235,6 +241,7 @@
 				3F8647561CD00A2E00352F36 /* ProdutoLojaUsuario.swift in Sources */,
 				3F86474C1CD00A2E00352F36 /* Usuario.swift in Sources */,
 				3F8647511CD00A2E00352F36 /* Local+CoreDataProperties.swift in Sources */,
+				3F17A6F31CD13600006293B9 /* ProdutoLojaUsuarioDAO.swift in Sources */,
 				3F86474E1CD00A2E00352F36 /* UsuarioTipo.swift in Sources */,
 				3F86474B1CD00A2E00352F36 /* Usuario+CoreDataProperties.swift in Sources */,
 				3F86474A1CD00A2E00352F36 /* Marca.swift in Sources */,
@@ -242,6 +249,7 @@
 				3F8647501CD00A2E00352F36 /* Produto.swift in Sources */,
 				3F8647551CD00A2E00352F36 /* ProdutoLojaUsuario+CoreDataProperties.swift in Sources */,
 				3F86474D1CD00A2E00352F36 /* UsuarioTipo+CoreDataProperties.swift in Sources */,
+				3F17A6F51CD13623006293B9 /* UsuarioTipoDAO.swift in Sources */,
 				3F86474F1CD00A2E00352F36 /* Produto+CoreDataProperties.swift in Sources */,
 				3F67A8851CCFE8F1002863E6 /* AppDelegate.swift in Sources */,
 				3FAC58691CD00D99005EC856 /* MarcaDAO.swift in Sources */,
