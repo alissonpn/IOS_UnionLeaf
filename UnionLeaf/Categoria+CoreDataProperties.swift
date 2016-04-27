@@ -1,5 +1,5 @@
 //
-//  Produto+CoreDataProperties.swift
+//  Categoria+CoreDataProperties.swift
 //  UnionLeaf
 //
 //  Created by Student on 4/27/16.
@@ -12,13 +12,9 @@
 import Foundation
 import CoreData
 
-extension Produto {
+extension Categoria {
 
-    @NSManaged var descricao: String?
-    @NSManaged var imagemUrl: String?
     @NSManaged var nome: String?
-    @NSManaged var marcaR: Marca?
-    @NSManaged var produtoLojaUsuarioR: ProdutoLojaUsuario?
-    @NSManaged var categoriaR: Categoria?
+    @NSManaged var produtoR: Produto?
 
 }

@@ -12,6 +12,9 @@
 		3F17A6F81CD14CAC006293B9 /* Favoritos+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F17A6F61CD14CAC006293B9 /* Favoritos+CoreDataProperties.swift */; };
 		3F17A6F91CD14CAC006293B9 /* Favoritos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F17A6F71CD14CAC006293B9 /* Favoritos.swift */; };
 		3F17A6FB1CD14DE1006293B9 /* FavoritosDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F17A6FA1CD14DE1006293B9 /* FavoritosDAO.swift */; };
+		3F17A7061CD16164006293B9 /* Categoria+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F17A7041CD16164006293B9 /* Categoria+CoreDataProperties.swift */; };
+		3F17A7071CD16164006293B9 /* Categoria.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F17A7051CD16164006293B9 /* Categoria.swift */; };
+		3F17A7091CD1622D006293B9 /* CategoriaDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F17A7081CD1622D006293B9 /* CategoriaDAO.swift */; };
 		3F67A8851CCFE8F1002863E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F67A8841CCFE8F1002863E6 /* AppDelegate.swift */; };
 		3F67A8871CCFE8F1002863E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F67A8861CCFE8F1002863E6 /* ViewController.swift */; };
 		3F67A88A1CCFE8F1002863E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F67A8881CCFE8F1002863E6 /* Main.storyboard */; };
@@ -46,6 +49,9 @@
 		3F17A6F61CD14CAC006293B9 /* Favoritos+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Favoritos+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		3F17A6F71CD14CAC006293B9 /* Favoritos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Favoritos.swift; sourceTree = "<group>"; };
 		3F17A6FA1CD14DE1006293B9 /* FavoritosDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritosDAO.swift; sourceTree = "<group>"; };
+		3F17A7041CD16164006293B9 /* Categoria+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Categoria+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3F17A7051CD16164006293B9 /* Categoria.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Categoria.swift; sourceTree = "<group>"; };
+		3F17A7081CD1622D006293B9 /* CategoriaDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriaDAO.swift; sourceTree = "<group>"; };
 		3F67A8811CCFE8F1002863E6 /* UnionLeaf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnionLeaf.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F67A8841CCFE8F1002863E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F67A8861CCFE8F1002863E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -136,6 +142,8 @@
 		3F86473A1CCFF40800352F36 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3F17A7041CD16164006293B9 /* Categoria+CoreDataProperties.swift */,
+				3F17A7051CD16164006293B9 /* Categoria.swift */,
 				3F17A6F61CD14CAC006293B9 /* Favoritos+CoreDataProperties.swift */,
 				3F17A6F71CD14CAC006293B9 /* Favoritos.swift */,
 				3FAC58721CD00F48005EC856 /* DAO.swift */,
@@ -156,6 +164,7 @@
 				3F67A88B1CCFE8F1002863E6 /* UnionLeaf.xcdatamodeld */,
 				3FAC58681CD00D99005EC856 /* MarcaDAO.swift */,
 				3FAC586A1CD00DB7005EC856 /* ProdutoDAO.swift */,
+				3F17A7081CD1622D006293B9 /* CategoriaDAO.swift */,
 				3F17A6FA1CD14DE1006293B9 /* FavoritosDAO.swift */,
 				3FAC586C1CD00DE2005EC856 /* LojaDAO.swift */,
 				3F17A6F41CD13623006293B9 /* UsuarioTipoDAO.swift */,
@@ -244,6 +253,7 @@
 				3F17A6F91CD14CAC006293B9 /* Favoritos.swift in Sources */,
 				3F8647531CD00A2E00352F36 /* Loja+CoreDataProperties.swift in Sources */,
 				3F67A88D1CCFE8F1002863E6 /* UnionLeaf.xcdatamodeld in Sources */,
+				3F17A7061CD16164006293B9 /* Categoria+CoreDataProperties.swift in Sources */,
 				3FAC586F1CD00DFB005EC856 /* UsuarioDAO.swift in Sources */,
 				3F8647521CD00A2E00352F36 /* Local.swift in Sources */,
 				3FAC586D1CD00DE2005EC856 /* LojaDAO.swift in Sources */,
@@ -265,6 +275,8 @@
 				3F67A8851CCFE8F1002863E6 /* AppDelegate.swift in Sources */,
 				3FAC58691CD00D99005EC856 /* MarcaDAO.swift in Sources */,
 				3F17A6F81CD14CAC006293B9 /* Favoritos+CoreDataProperties.swift in Sources */,
+				3F17A7071CD16164006293B9 /* Categoria.swift in Sources */,
+				3F17A7091CD1622D006293B9 /* CategoriaDAO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

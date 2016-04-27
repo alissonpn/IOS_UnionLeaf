@@ -19,6 +19,6 @@ extension Produto {
     @NSManaged var nome: String?
     @NSManaged var marcaR: Marca?
     @NSManaged var produtoLojaUsuarioR: ProdutoLojaUsuario?
-    @NSManaged var categoriaR: Categoria?
+    @NSManaged var categoriaR: NSManagedObject?
 
 }
