@@ -52,7 +52,7 @@ class CadastroController {
             let produto1 = Produto()
             produto1.nome = "Isolada"
             produto1.descricao = "Suplemento proteico para atletas formulado com pura whey protein isolada, proteína de rápida absorção e alto valor biológico, que auxilia no ganho de massa muscular. Com 25 g de proteínas por porção e enriquecido com vitaminas e minerais.  "
-            produto1.imagemUrl = "Isolada"
+            produto1.imagemUrl = "isolada"
             produto1.categoriaR = categoria1
             produto1.marcaR = marca1
             ProdutoDAO.DaoFactory.inserir(produto1)
@@ -62,7 +62,7 @@ class CadastroController {
             produto2.descricao = "PROTEIN PREMIUM é um completo Suplemento Proteico para Atletas composto por blend exclusivo de 8 diferentes tipos de proteínas."
            
 
-            produto2.imagemUrl = "Protein"
+            produto2.imagemUrl = "Protein Premium"
             produto2.categoriaR = categoria1
             produto2.marcaR = marca2
             ProdutoDAO.DaoFactory.inserir(produto2)
@@ -70,7 +70,7 @@ class CadastroController {
             let produto3 = Produto()
             produto3.nome = "First Whey Protein"
             produto3.descricao = "A First Whey Protein é a tradicional pasta de amendoim (peanut butter), produzida com matéria prima de altíssima qualidade com grãos de amendoim selecionados adicionada de whey protein, sem adição de açúcar e livre de glúten. "
-            produto3.imagemUrl = ""
+            produto3.imagemUrl = "First"
             produto3.categoriaR = categoria1
             produto3.marcaR = marca3
             ProdutoDAO.DaoFactory.inserir(produto3)
@@ -88,7 +88,7 @@ class CadastroController {
             produto5.descricao = "Inibidor de apetite,regulador intestinal, ajuda no combate a gordura localizada, celulite, estrias, colesterol, diabetes, ansiedade."
     
 
-            produto5.imagemUrl = " 30 Ervas"
+            produto5.imagemUrl = "Trinta Ervas"
             produto5.categoriaR = categoria2
             produto5.marcaR = marca6
             ProdutoDAO.DaoFactory.inserir(produto5)
