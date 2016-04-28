@@ -2,7 +2,7 @@
 //  ProdutoLojaUsuario+CoreDataProperties.swift
 //  UnionLeaf
 //
-//  Created by Student on 4/27/16.
+//  Created by Student on 4/28/16.
 //  Copyright © 2016 HackaTruck. All rights reserved.
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
@@ -14,13 +14,14 @@ import CoreData
 
 extension ProdutoLojaUsuario {
 
+    @NSManaged var dataCadastro: NSDate?
     @NSManaged var observacao: String?
-    @NSManaged var pontuacao: String?
+    @NSManaged var pontuacao: NSNumber?
     @NSManaged var valor: NSNumber?
+    @NSManaged var favoritosR: Favoritos?
     @NSManaged var localR: Local?
     @NSManaged var lojaR: Loja?
     @NSManaged var produtoR: Produto?
     @NSManaged var usuarioR: Usuario?
-    @NSManaged var favoritosR: Favoritos?
 
 }

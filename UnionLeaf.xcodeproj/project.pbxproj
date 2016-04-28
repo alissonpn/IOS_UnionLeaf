@@ -21,6 +21,11 @@
 		3F67A88D1CCFE8F1002863E6 /* UnionLeaf.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3F67A88B1CCFE8F1002863E6 /* UnionLeaf.xcdatamodeld */; };
 		3F67A88F1CCFE8F1002863E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F67A88E1CCFE8F1002863E6 /* Assets.xcassets */; };
 		3F67A8921CCFE8F1002863E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F67A8901CCFE8F1002863E6 /* LaunchScreen.storyboard */; };
+		3F6A24381CD28481005310A1 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6A24371CD28481005310A1 /* HomeController.swift */; };
+		3F6A243A1CD284F6005310A1 /* ConsultaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6A24391CD284F6005310A1 /* ConsultaController.swift */; };
+		3F6A243C1CD2850A005310A1 /* DetalheController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6A243B1CD2850A005310A1 /* DetalheController.swift */; };
+		3F6A243E1CD2854B005310A1 /* MapsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6A243D1CD2854B005310A1 /* MapsController.swift */; };
+		3F6A24401CD2859D005310A1 /* CadastroController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6A243F1CD2859D005310A1 /* CadastroController.swift */; };
 		3F8647491CD00A2E00352F36 /* Marca+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F86473B1CD00A2E00352F36 /* Marca+CoreDataProperties.swift */; };
 		3F86474A1CD00A2E00352F36 /* Marca.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F86473C1CD00A2E00352F36 /* Marca.swift */; };
 		3F86474B1CD00A2E00352F36 /* Usuario+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F86473D1CD00A2E00352F36 /* Usuario+CoreDataProperties.swift */; };
@@ -60,6 +65,11 @@
 		3F67A88E1CCFE8F1002863E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F67A8911CCFE8F1002863E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F67A8931CCFE8F1002863E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F6A24371CD28481005310A1 /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		3F6A24391CD284F6005310A1 /* ConsultaController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsultaController.swift; sourceTree = "<group>"; };
+		3F6A243B1CD2850A005310A1 /* DetalheController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalheController.swift; sourceTree = "<group>"; };
+		3F6A243D1CD2854B005310A1 /* MapsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapsController.swift; sourceTree = "<group>"; };
+		3F6A243F1CD2859D005310A1 /* CadastroController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CadastroController.swift; sourceTree = "<group>"; };
 		3F86473B1CD00A2E00352F36 /* Marca+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Marca+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		3F86473C1CD00A2E00352F36 /* Marca.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Marca.swift; sourceTree = "<group>"; };
 		3F86473D1CD00A2E00352F36 /* Usuario+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Usuario+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -135,6 +145,11 @@
 			isa = PBXGroup;
 			children = (
 				3F67A8861CCFE8F1002863E6 /* ViewController.swift */,
+				3F6A243B1CD2850A005310A1 /* DetalheController.swift */,
+				3F6A24371CD28481005310A1 /* HomeController.swift */,
+				3F6A24391CD284F6005310A1 /* ConsultaController.swift */,
+				3F6A243D1CD2854B005310A1 /* MapsController.swift */,
+				3F6A243F1CD2859D005310A1 /* CadastroController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -266,17 +281,22 @@
 				3F86474E1CD00A2E00352F36 /* UsuarioTipo.swift in Sources */,
 				3F86474B1CD00A2E00352F36 /* Usuario+CoreDataProperties.swift in Sources */,
 				3F86474A1CD00A2E00352F36 /* Marca.swift in Sources */,
+				3F6A24401CD2859D005310A1 /* CadastroController.swift in Sources */,
 				3F67A8871CCFE8F1002863E6 /* ViewController.swift in Sources */,
 				3F8647501CD00A2E00352F36 /* Produto.swift in Sources */,
 				3F8647551CD00A2E00352F36 /* ProdutoLojaUsuario+CoreDataProperties.swift in Sources */,
+				3F6A243A1CD284F6005310A1 /* ConsultaController.swift in Sources */,
+				3F6A243E1CD2854B005310A1 /* MapsController.swift in Sources */,
 				3F86474D1CD00A2E00352F36 /* UsuarioTipo+CoreDataProperties.swift in Sources */,
 				3F17A6F51CD13623006293B9 /* UsuarioTipoDAO.swift in Sources */,
 				3F86474F1CD00A2E00352F36 /* Produto+CoreDataProperties.swift in Sources */,
 				3F67A8851CCFE8F1002863E6 /* AppDelegate.swift in Sources */,
 				3FAC58691CD00D99005EC856 /* MarcaDAO.swift in Sources */,
+				3F6A24381CD28481005310A1 /* HomeController.swift in Sources */,
 				3F17A6F81CD14CAC006293B9 /* Favoritos+CoreDataProperties.swift in Sources */,
 				3F17A7071CD16164006293B9 /* Categoria.swift in Sources */,
 				3F17A7091CD1622D006293B9 /* CategoriaDAO.swift in Sources */,
+				3F6A243C1CD2850A005310A1 /* DetalheController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
